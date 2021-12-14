@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="w-full h-[70px] bg-black bg-gradient-to-r from-black via-gray-700 to-black text-white sm:px-8 px-2 flex justify-between items-center">
+    <header className="w-full min-w-[280px] h-[70px] bg-black bg-gradient-to-r from-black via-gray-700 to-black text-white sm:px-8 px-2 flex justify-between items-center">
       <div className="flex justify-center items-center">
         <Link href="/">
           <a className="sm:text-5xl text-4xl font-mono font-bold sm:tracking-[.7rem] tracking-widest flex items-center hover:text-gray-200">

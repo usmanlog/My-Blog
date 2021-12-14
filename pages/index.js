@@ -1,5 +1,11 @@
+import Intro from "../components/Intro";
 import Layout from "../components/Layout";
+Intro;
 
 export default function Home() {
-  return <Layout></Layout>;
+  return (
+    <Layout>
+      <Intro />
+    </Layout>
+  );
 }

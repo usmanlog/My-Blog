@@ -3,8 +3,8 @@ import profilePic from "../public/portfolio.jpg";
 
 export default function AboutMe() {
   return (
-    <section className="font-mono w-11/12 sm:max-w-screen-xl shadow-lg shadow-gray-400 rounded my-6 mx-auto">
-      <h3 className="text-3xl ml-6 font-bold">About me</h3>
+    <section className="font-mono w-11/12 sm:max-w-screen-xl shadow-lg shadow-gray-500 rounded my-6 mx-auto">
+      <p className="text-3xl ml-6 font-bold">About me</p>
       <div className="text-justify p-6 sm:p-10 lg:flex lg:justify-between">
         <div className="mb-10 lg:mr-10 lg-mb-0  w-48 h-48 mx-auto">
           <Image

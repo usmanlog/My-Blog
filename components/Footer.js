@@ -1,10 +1,9 @@
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import { data } from "autoprefixer";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white h-[200px] min-w-[280px] pt-3">
+    <footer className="w-full font-poppins bg-black text-white h-[200px] min-w-[280px] py-3">
       <p className="text-3xl ml-8">Contact me</p>
       <IconContext.Provider value={{ size: "2em", className: "hover:text-gray-300" }}>
         <div className="flex w-[80px] mx-auto justify-between mt-6">
@@ -20,7 +19,9 @@ export default function Footer() {
       <p className="text-center mt-8">
         Made with <span className="text-red-700">❤</span> by Usman.
       </p>
-      <p className="text-center text-md">&copy;{new Date().getFullYear()} | All rights reserved</p>
+      <p className="text-center text-md">
+        &copy;{new Date().getFullYear()} - usmaan.dev - All rights reserved
+      </p>
     </footer>
   );
 }

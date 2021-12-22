@@ -2,12 +2,11 @@ import Image from "next/image";
 
 export default function Project({ image, name, stack, description, link }) {
   return (
-    <div className=" bg-gradient-to-br from-black to-gray-700 hover:cursor-pointer hover:bg-gradient-to-tr hover:from-gray-700 hover:to-black text-white rounded-md overflow-hidden mx-auto my-8 lg:my-0 shadow-black shadow-sm h-[350px] w-[265px] text-justify">
+    <div className=" bg-gradient-to-br from-black to-gray-700 hover:cursor-pointer hover:bg-gradient-to-tr hover:from-gray-700 hover:to-black text-white rounded-md overflow-hidden mx-auto my-8 lg:my-0 shadow-black shadow-sm h-[350px] w-[260px] sm:w-[300px] sm:h-[380px] text-justify">
       <a href={link} target="_blank" rel="noopener noreferrer">
         <Image
           src={image}
           layout="responsive"
-          quality={100}
           height={160}
           width={265}
           objectFit="cover"

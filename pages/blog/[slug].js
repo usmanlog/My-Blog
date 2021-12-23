@@ -3,8 +3,12 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 
-export default function PostPage() {
-  return <div></div>;
+export default function PostPage({ content, slug, frontMatter: { title, category, date } }) {
+  return (
+    <section>
+      <h1>{title}</h1>
+    </section>
+  );
 }
 
 export async function getStaticProps({ params: { slug } }) {

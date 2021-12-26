@@ -7,10 +7,20 @@ export default function Footer() {
       <p className="text-3xl ml-8">Contact me</p>
       <IconContext.Provider value={{ size: "2em", className: "hover:text-gray-300" }}>
         <div className="flex w-[80px] mx-auto justify-between mt-6">
-          <a href="https://github.com/usmanlog" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/usmanlog"
+            aria-label="Github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub />
           </a>
-          <a href="https://twitter.com/usmaanLog" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com/usmaanLog"
+            target="_blank"
+            aria-label="Twitter"
+            rel="noopener noreferrer"
+          >
             <FaTwitter />
           </a>
         </div>

@@ -6,8 +6,8 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import ReactDom from "react-dom";
 import ReactMarkdown from "react-markdown";
-import Prism from "prismjs";
-import "prismjs/themes/prism-nord.css";
+import hljs from "highlight.js";
+import "highlight.js/styles/night-owl.css";
 
 export default function PostPage({
   content,
@@ -15,9 +15,12 @@ export default function PostPage({
   frontMatter: { title, category, date, cover_image },
 }) {
   useEffect(() => {
-    const pre = document.querySelector("pre");
-    pre.classList.add("language-javascript");
-    Prism.highlightAll();
+    const pre = document.querySelectorAll("pre code");
+
+    pre.forEach((p) => {
+      p.classList.add("language-javascript");
+    });
+    hljs.highlightAll();
   }, []);
 
   return (
@@ -44,6 +47,7 @@ export default function PostPage({
             objectFit="cover"
             alt={title}
             quality={100}
+            priority
           ></Image>
         </div>
 

@@ -18,11 +18,7 @@
   }
 
   .text pre {
-    background: #f4f4f4;
-    padding: 20px;
-    margin: 20px 0;
-    line-height: 2.3;
-    font: 4em;
+    @apply my-4 leading-8 text-lg;
   }
 
   .text h1 {

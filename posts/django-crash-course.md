@@ -1,11 +1,11 @@
 ---
-title: 'Django Crash Course'
-date: 'May 5, 2021'
-excerpt: 'Django is a very powerful, high level Python framework for building web applications'
-cover_image: '/images/posts/img3.jpg'
-category: 'Python'
-author: 'Sam Smith'
-author_image: 'https://randomuser.me/api/portraits/men/12.jpg'
+title: "Django Crash Course"
+date: "May 5, 2021"
+excerpt: "Django is a very powerful, high level Python framework for building web applications"
+cover_image: "/images/posts/img3.jpg"
+category: "Python"
+author: "Sam Smith"
+author_image: "https://randomuser.me/api/portraits/men/12.jpg"
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
@@ -30,7 +30,7 @@ consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
 Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
 procul fugitque corpora iugales!
 
-    var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
+    var ethics_font_drive = cycleSystemProgram deprecatedTransferIp.ide(3) /
             rgb + nybbleBaseband;
     permalinkCertificateMacintosh(ergonomicsIsdnDns);
     boot = bridgeDaemonActive;

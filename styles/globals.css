@@ -8,4 +8,30 @@
   body {
     @apply bg-gray-50;
   }
+
+  .text ul,
+  ol {
+    font-size: 110%;
+    line-height: 2.3;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .text pre {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 2.3;
+    font: 4em;
+  }
+
+  .text h1 {
+    font-size: 35px;
+  }
+
+  .text h2,
+  .text h3,
+  .text h4 {
+    font-size: 27px;
+  }
 }

@@ -9,6 +9,7 @@ import fs from "fs";
 import path from "path";
 import { sortByDate } from "../utils";
 import LatestPosts from "../components/LatestPosts";
+import Subscribe from "../components/Subscribe";
 
 export default function Home({ posts }) {
   return (
@@ -17,6 +18,7 @@ export default function Home({ posts }) {
       <AboutMe />
       <Projects />
       <LatestPosts posts={posts} />
+      <Subscribe />
     </Layout>
   );
 }

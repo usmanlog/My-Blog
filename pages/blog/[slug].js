@@ -19,15 +19,15 @@ export default function PostPage({
 
     pre.forEach((p) => {
       p.classList.add("language-javascript");
+      hljs.highlightElement(p);
     });
-    hljs.highlightAll();
   }, []);
 
   return (
     <Layout title={title}>
-      <section className="font-poppins shadow-lg my-10 shadow-gray-400 p-10">
+      <section className="font-poppins shadow-lg my-10 shadow-gray-400 sm:p-10 p-2">
         <div className="flex lg:flex-row flex-col lg:items-center justify-between">
-          <h1 className="lg:text-5xl text-4xl font-semibold">{title}</h1>
+          <h1 className="md:text-5xl text-3xl font-semibold">{title}</h1>
           <div className="my-3">
             <span className="p-2 rounded-md bg-violet-700 text-white font-semibold sm:text-base text-xs mr-2">
               {category}
@@ -51,9 +51,11 @@ export default function PostPage({
           ></Image>
         </div>
 
-        <article className="text text-justify">
-          <ReactMarkdown>{content}</ReactMarkdown>
-        </article>
+        <div className="md:w-[750px] min-w-[260px] md:mx-auto">
+          <article className="text text-left sm:text-lg">
+            <ReactMarkdown>{content}</ReactMarkdown>
+          </article>
+        </div>
       </section>
     </Layout>
   );

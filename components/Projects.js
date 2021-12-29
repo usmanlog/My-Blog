@@ -8,7 +8,7 @@ export default function Projects() {
         Projects I have worked on<span className="tracking-widest">...</span>
       </p>
 
-      <div className="flex flex-col lg:flex-row lg:justify-evenly sm:p-10">
+      <div className="flex flex-col lg:flex-row flex-wrap sm:p-10">
         {projects.map((pr) => (
           <Project
             key={pr.id}

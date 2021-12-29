@@ -18,7 +18,7 @@
   }
 
   .text pre {
-    @apply my-4 leading-8 text-lg;
+    @apply my-4 sm:leading-8 sm:text-lg text-sm;
   }
 
   .text h1 {

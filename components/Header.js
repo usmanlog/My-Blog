@@ -16,7 +16,9 @@ export default function Header() {
       <div className="sm:mr-6 mr-2">
         <nav>
           <Link href="/blog">
-            <a className="sm:mr-6 mr-3 hover:text-gray-200">Blog</a>
+            <a className="sm:mr-6 mr-3 hover:text-gray-200 font-poppins sm:text-lg text-base">
+              Blog
+            </a>
           </Link>
         </nav>
       </div>

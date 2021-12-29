@@ -70,7 +70,7 @@ export default function Subscribe() {
               type="submit"
               className="bg-white h-10 w-24 mb-3 text-black rounded-md p-2 shadow-gray-500 font-extrabold shadow-sm hover:bg-gray-200"
             >
-              Notify Me
+              Subscribe
             </button>
           </div>
 

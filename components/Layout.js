@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
+import Subscribe from "./Subscribe";
 
 export default function Layout({ title, children, keywords, description }) {
   return (
@@ -15,7 +16,7 @@ export default function Layout({ title, children, keywords, description }) {
       <Header />
 
       <main className="container mx-auto">{children}</main>
-
+      <Subscribe />
       <Footer />
     </div>
   );

@@ -1,11 +1,11 @@
 ---
-title: 'Tailwind vs. Bootstrap'
-date: 'May 5, 2021'
-excerpt: 'Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them'
-cover_image: '/images/posts/img2.jpg'
-category: 'CSS'
-author: 'Jane Doe'
-author_image: 'https://randomuser.me/api/portraits/women/11.jpg'
+title: "Tailwind vs. Bootstrap"
+date: "May 5, 2021"
+excerpt: "Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them"
+cover_image: "/images/posts/img2.jpg"
+category: "CSS"
+author: "Jane Doe"
+author_image: "https://randomuser.me/api/portraits/women/11.jpg"
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
@@ -30,10 +30,16 @@ consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
 Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
 procul fugitque corpora iugales!
 
-    var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
-            rgb + nybbleBaseband;
-    permalinkCertificateMacintosh(ergonomicsIsdnDns);
-    boot = bridgeDaemonActive;
+    export async function getStaticProps({ params: { slug } }) {
+
+        const markdownWithMeta = fs.readFileSync(path.join("posts", slug + ".md"), "utf-8");
+
+        const { data: frontMatter, content } = matter(markdownWithMeta);
+
+        return {
+        props: { frontMatter, content, slug },
+        };
+    };
 
 ## O contra diu
 

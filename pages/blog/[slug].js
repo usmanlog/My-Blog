@@ -4,10 +4,9 @@ import matter from "gray-matter";
 import Layout from "../../components/Layout";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import ReactDom from "react-dom";
 import ReactMarkdown from "react-markdown";
-import hljs from "highlight.js";
-import "highlight.js/styles/night-owl.css";
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
 
 export default function PostPage({
   content,
@@ -19,13 +18,13 @@ export default function PostPage({
 
     pre.forEach((p) => {
       p.classList.add("language-javascript");
-      hljs.highlightElement(p);
+      Prism.highlightElement(p);
     });
   }, []);
 
   return (
     <Layout title={title}>
-      <section className="font-poppins shadow-lg my-10 shadow-gray-400 sm:p-10 p-2">
+      <section className="font-poppins shadow-lg my-10 shadow-gray-400 sm:p-10 p-5">
         <div className="flex lg:flex-row flex-col lg:items-center justify-between">
           <h1 className="md:text-5xl text-3xl font-semibold">{title}</h1>
           <div className="my-3">
@@ -46,7 +45,6 @@ export default function PostPage({
             layout="responsive"
             objectFit="cover"
             alt={title}
-            quality={100}
             priority
           ></Image>
         </div>

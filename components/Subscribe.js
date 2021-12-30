@@ -68,15 +68,17 @@ export default function Subscribe() {
             </div>
             <button
               type="submit"
-              className="bg-white h-10 w-24 mb-3 text-black rounded-md p-2 shadow-gray-500 font-extrabold shadow-sm hover:bg-gray-200"
+              className="bg-white mb-3 text-black rounded-md p-2 shadow-gray-500 font-extrabold shadow-sm hover:bg-gray-200"
             >
               Subscribe
             </button>
           </div>
 
-          <small className="text-xs text-center">
-            {message ? message : `I'll not be sending any spam Emails`}
-          </small>
+          <div className="mx-auto text-center">
+            <small className="text-xs">
+              {message ? message : `I'll not be sending any spam Emails`}
+            </small>
+          </div>
         </form>
       </div>
     </section>

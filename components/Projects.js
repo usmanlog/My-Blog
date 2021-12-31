@@ -4,7 +4,7 @@ import Project from "./Project";
 export default function Projects() {
   return (
     <section className="font-poppins sm:w-11/12 w-[96%] sm:max-w-screen-xl shadow-lg shadow-gray-500 rounded my-16 mx-auto transition-all ease-in duration-300">
-      <p className="text-3xl ml-6 font-bold">
+      <p className="sm:text-3xl text-2xl ml-6 mb-8 font-bold">
         Projects I have worked on<span className="tracking-widest">...</span>
       </p>
 

@@ -63,7 +63,7 @@ export default function Subscribe() {
                 ref={inputEl}
                 required
                 type="email"
-                className="h-10 font-poppins rounded-md sm:w-auto w-[250px] bg-white mb-3 p-3 mr-3"
+                className="h-10 font-poppins rounded-md sm:w-[300px] w-[90%] bg-white mb-3 p-3 sm:mr-3 mx-auto sm:mx-0"
               />
             </div>
             <button

@@ -13,6 +13,7 @@ export default function Post({ title, image, description, date, category, slug }
             objectFit="cover"
             alt={title}
             layout="responsive"
+            priority
           />
           <div className="grid grid-flow-row w-full h-[245px]">
             <div className="p-4">

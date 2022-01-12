@@ -13,7 +13,7 @@ export default function AboutMe() {
             placeholder="blur"
             layout="fixed"
             height={192}
-            width={192}
+            width={188}
           ></Image>
         </div>
 

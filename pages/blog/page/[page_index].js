@@ -15,7 +15,7 @@ export default function BlogPage({ posts, numPages, currentPage }) {
           Latest Blog Posts<span className="tracking-widest">...</span>
         </p>
 
-        <div className="grid md:grid-cols-2 gap-10 xl:grid-cols-3 auto-rows-max p-10">
+        <div className="grid md:grid-cols-2 gap-10 xl:grid-cols-3 auto-rows-max sm:p-10 p-2">
           {posts.map((post, idx) => (
             <Post
               key={idx}
